@@ -1,6 +1,6 @@
 /**
- * 10- FaÁa um programa que calcule e mostre a ·rea de um cÌrculo.
- * Sabe-se que ¡rea = PI *r≤.
+ * 10- Fa√ßa um programa que calcule e mostre a √°rea de um c√≠rculo.
+ * Sabe-se que √Årea = PI *r¬≤.
  */
 
 #include <stdio.h>
