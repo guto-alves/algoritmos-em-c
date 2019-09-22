@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &anoNascimento);
 
 	idade = 2019 - anoNascimento;
-	idadeFuturo = idade + 31;
+	idadeFuturo = 2050 - anoNascimento;
 
 	printf("Idade = %d\n", idade);
 	printf("Em 2050 voce tera %d anos\n\n", idadeFuturo);
