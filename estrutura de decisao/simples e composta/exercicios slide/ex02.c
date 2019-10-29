@@ -8,11 +8,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
 
 int main(int argc, char *argv[]) {
+    setlocale(LC_ALL, "Portuguese");
+
     double pesoIdeal;
     double altura;
-    char sexo[1];
+    char sexo[2];
 
     printf("Digite sua altura: ");
     scanf("%lf", &altura);
@@ -20,13 +23,17 @@ int main(int argc, char *argv[]) {
     printf("Digite seu sexo: ");
     scanf("%s", sexo);
 
-    if (!strcmp(sexo, 'm')){
-        printf("Masculino");
+    if (strcmp(sexo, "m") == 0)
         pesoIdeal = 72.7 * altura - 58;
-    }else
+    else if(strcmp(sexo, "f") == 0)
         pesoIdeal = 62.1 * altura - 44.7;
+    else{
+        printf("Sexo inválido!\n");
+        system("pause");
+        return 0;
+    }
 
-    printf("Peso ideal = %f", pesoIdeal);
+    printf("Peso ideal = %.2f", pesoIdeal);
 
 	getch();
 	return 0;

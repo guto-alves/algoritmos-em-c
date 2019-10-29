@@ -18,8 +18,8 @@ int main(int argc, char *argv[]) {
 	sum = number1 + number2;
 
 	if(sum > 25)
-        printf("Soma maior que 25");
+        printf("Soma maior que 25\n");
 
-	getch();
+	system("pause");
 	return 0;
 }

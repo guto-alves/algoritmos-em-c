@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 
 	int number;
 
-	printf("Enter a number: ");
+	printf("Digite um número inteiro: ");
 	scanf("%d", &number);
 
 	if(number % 2 == 0)
